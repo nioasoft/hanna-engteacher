@@ -1,8 +1,7 @@
 import type { Config } from 'tailwindcss';
-import { fontFamily } from 'tailwindcss/defaultTheme';
 
 const config: Config = {
-  darkMode: ['class'],
+  darkMode: 'class',
   content: [
     './src/pages/**/*.{js,ts,jsx,tsx,mdx}',
     './src/components/**/*.{js,ts,jsx,tsx,mdx}',
@@ -17,21 +16,6 @@ const config: Config = {
       },
     },
     extend: {
-      colors: {
-        background: '#FAFAF9',
-        surface: '#FFFFFF',
-        'text-primary': '#1F2937',
-        'text-secondary': '#6B7280',
-        'primary-accent': '#60A5FA',
-        'secondary-accent': '#34D399',
-        'tertiary-accent': '#F3F4F6',
-        'border-light': '#E5E7EB',
-        'border-medium': '#D1D5DB',
-      },
-      fontFamily: {
-        sans: ['var(--font-inter)', ...fontFamily.sans],
-        heebo: ['var(--font-heebo)', ...fontFamily.sans], // Custom font for Hebrew
-      },
       lineHeight: {
         '1.6': '1.6',
       },

@@ -1,32 +1,15 @@
-import "./globals.css";
-import { Inter, Heebo } from "next/font/google";
+import type { Metadata } from "next";
 
-const inter = Inter({
-  subsets: ['latin'],
-  variable: '--font-inter',
-  display: 'swap',
-});
+export const metadata: Metadata = {
+  title: "Channa David | English Teacher - Personalized 1-on-1 Lessons",
+  description: "CELTA-certified English teacher offering personalized virtual lessons for business professionals, travelers, and test preparation.",
+  keywords: "English teacher, CELTA, online English lessons, business English, travel English"
+};
 
-const heebo = Heebo({
-  subsets: ['hebrew'],
-  variable: '--font-heebo',
-  display: 'swap',
-});
-
-export default function RootLayout({
-  children,
-  params: { locale },
-}: {
-  children: React.ReactNode;
-  params: { locale: string };
-}) {
+export default function RootLayout({children}: {children: React.ReactNode}) {
   return (
-    <html lang={locale} dir={locale === 'he' ? 'rtl' : 'ltr'}>
-      <body
-        className={`${
-          locale === 'he' ? heebo.variable : inter.variable
-        } antialiased`}
-      >
+    <html lang="en">
+      <body>
         {children}
       </body>
     </html>

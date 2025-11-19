@@ -18,11 +18,11 @@ export default function IconCard({
 }: IconCardProps) {
   return (
     <Card className={cn("flex flex-col items-center text-center p-6", className)} {...props}>
-      <div className="mb-4 rounded-full bg-tertiary-accent p-3">
-        <Icon size={32} className="text-primary-accent" />
+      <div className="mb-4 rounded-full bg-gray-200 p-3">
+        <Icon size={32} className="text-blue-500" />
       </div>
-      <h3 className="mb-2 text-xl font-semibold text-text-primary">{title}</h3>
-      <p className="text-text-secondary">{description}</p>
+      <h3 className="mb-2 text-xl font-semibold text-gray-800">{title}</h3>
+      <p className="text-gray-600">{description}</p>
     </Card>
   );
 }

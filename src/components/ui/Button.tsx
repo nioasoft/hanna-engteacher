@@ -3,18 +3,18 @@ import { cn } from '@/lib/utils';
 import { ButtonHTMLAttributes, forwardRef } from 'react';
 
 const buttonVariants = cva(
-  'inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-primary-accent disabled:pointer-events-none disabled:opacity-50',
+  'inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-blue-500 disabled:pointer-events-none disabled:opacity-50',
   {
     variants: {
       variant: {
-        default: 'bg-primary-accent text-surface shadow hover:bg-primary-accent/90',
+        default: 'bg-blue-500 text-white shadow hover:bg-blue-500/90',
         destructive: 'bg-red-500 text-slate-50 shadow-sm hover:bg-red-500/90',
         outline:
-          'border border-border-medium bg-transparent shadow-sm hover:bg-tertiary-accent hover:text-text-primary',
+          'border border-gray-400 bg-transparent shadow-sm hover:bg-gray-200 hover:text-gray-800',
         secondary:
-          'bg-secondary-accent text-text-primary shadow-sm hover:bg-secondary-accent/80',
-        ghost: 'hover:bg-tertiary-accent hover:text-text-primary',
-        link: 'text-primary-accent underline-offset-4 hover:underline',
+          'bg-green-500 text-gray-800 shadow-sm hover:bg-green-500/80',
+        ghost: 'hover:bg-gray-200 hover:text-gray-800',
+        link: 'text-blue-500 underline-offset-4 hover:underline',
       },
       size: {
         default: 'h-9 px-4 py-2',
