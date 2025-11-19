@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import './globals.css';
 
 export const metadata: Metadata = {
   title: "Channa David | English Teacher - Personalized 1-on-1 Lessons",
