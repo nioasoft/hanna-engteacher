@@ -3,7 +3,7 @@
 import { Link } from '@/navigation';
 import { useTranslations } from 'next-intl';
 import LanguageSwitcher from './LanguageSwitcher';
-import { Mail, Whatsapp } from 'lucide-react'; // Placeholder for social media icons, using Lucide for now
+import { Mail, Phone } from 'lucide-react'; // Placeholder for social media icons, using Lucide for now
 
 export default function Footer() {
   const t = useTranslations('footer');
@@ -45,7 +45,7 @@ export default function Footer() {
               </Link>
             </p>
             <p className="flex items-center gap-2">
-              <Whatsapp size={18} />
+              <Phone size={18} />
               <Link href="https://wa.me/972XXXYYYY" className="hover:text-primary-accent transition-colors duration-200">
                 +972-XX-XXX-XXXX
               </Link>

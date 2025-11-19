@@ -1,4 +1,4 @@
-import "../globals.css";
+import "./globals.css";
 import { Inter, Heebo } from "next/font/google";
 
 const inter = Inter({

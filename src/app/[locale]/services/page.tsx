@@ -21,7 +21,7 @@ export default function Services() {
         <Icon size={32} className="text-primary-accent mr-3" />
         <h3 className="text-xl font-semibold text-text-primary">{title}</h3>
       </div>
-      <h4 className="font-medium text-text-primary mb-2">{t('what_you_learn_title' || 'What You'll Learn:')}</h4>
+      <h4 className="font-medium text-text-primary mb-2">{t('what_you_learn_title')}</h4>
       <ul className="list-disc list-inside text-text-secondary mb-4 space-y-1">
         {whatYouLearn.map((item, index) => (
           <li key={index}>{item}</li>
