@@ -9,11 +9,3 @@
 [dir="ltr"] {
   text-align: left;
 }
-
-body {
-  font-family: var(--font-inter), sans-serif;
-}
-
-[dir="he"] body {
-  font-family: var(--font-heebo), sans-serif;
-}

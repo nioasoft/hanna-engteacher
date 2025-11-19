@@ -1,5 +1,16 @@
-import type { Metadata } from "next";
+import type { Metadata } from 'next';
+import { Inter, Heebo } from 'next/font/google';
 import './globals.css';
+
+const inter = Inter({
+  subsets: ['latin'],
+  variable: '--font-inter',
+});
+
+const heebo = Heebo({
+  subsets: ['hebrew'],
+  variable: '--font-heebo',
+});
 
 export const metadata: Metadata = {
   title: "Channa David | English Teacher - Personalized 1-on-1 Lessons",
@@ -10,7 +21,7 @@ export const metadata: Metadata = {
 export default function RootLayout({children}: {children: React.ReactNode}) {
   return (
     <html lang="en">
-      <body>
+      <body className={`${inter.variable} ${heebo.variable} bg-gray-50 text-gray-800 font-sans`}>
         {children}
       </body>
     </html>
